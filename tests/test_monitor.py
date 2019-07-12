@@ -1,7 +1,7 @@
 # All tests pass successfully individually but not as a suite
 import luigi
 from luigi.mock import MockTarget
-from luigi_monitor import monitor
+from fluigi_monitor import monitor
 import unittest
 import os
 import mock

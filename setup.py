@@ -4,15 +4,16 @@ except ImportError:
     from distutils.core import setup
 
 setup(
-    name="luigi-monitor",
+    name="fluigi-monitor",
     version="1.1.4",
     description="Send summary messages of your Luigi jobs to Slack.",
     long_description=open("README.md").read(),
-    url="https://github.com/hudl/luigi-monitor",
+    url="https://github.com/Foristkirito/luigi-monitor",
     author="Hudl",
-    author_email="alex.debrie@hudl.com",
+    author_email="xiaxin0202@foxmail.com",
     license="MIT",
-    packages=['luigi_monitor'],
+    packages=['fluigi_monitor'],
+    long_description_content_type="text/markdown",
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Intended Audience :: Developers",
@@ -24,6 +25,7 @@ setup(
     keywords="luigi",
     install_requires=["requests", "luigi"],
     entry_points={
-        "console_scripts": ["luigi-monitor=luigi_monitor.luigi_monitor:run"]
+        "console_scripts": ["fluigi-monitor=fluigi_monitor.fluigi_monitor:run"]
     }
-)
+    )
+
