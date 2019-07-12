@@ -5,11 +5,11 @@ except ImportError:
 
 setup(
     name="fluigi-monitor",
-    version="1.1.4",
+    version="1.1.5",
     description="Send summary messages of your Luigi jobs to Slack.",
     long_description=open("README.md").read(),
     url="https://github.com/Foristkirito/luigi-monitor",
-    author="Hudl",
+    author="xiaxin",
     author_email="xiaxin0202@foxmail.com",
     license="MIT",
     packages=['fluigi_monitor'],
