@@ -132,9 +132,6 @@ def format_message(max_print, host, job=None):
     if m.is_success_only() and 'SUCCESS' in m.notify_events:
         emoji = ":heavy_check_mark:"
         text.append(add_context_to_message("ran successfully", const_success_message))
-        text.append("\t\t\t*Following %d tasks succeeded:*" % len(m.recorded_events['SUCCESS']))
-        for succeeded in m.recorded_events['SUCCESS']:
-            text.append("\t\t\t\t" + succeeded)
     fulltext = [emoji + " Status report for *{}* at *{}*:".format(job, host)]
     fulltext.extend(text)
     formatted_text = "\n".join(fulltext)
